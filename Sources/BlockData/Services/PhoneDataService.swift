@@ -98,7 +98,7 @@ public final class PhoneDataService: ObservableObject {
             print("✅ Pre-sorted \(sortedCallKitEntries.count) clean E.164 entries for CallKit")
 
             // Write pre-sorted entries to App Group for CallKit extension
-            let suites = [appGroup, "group.com.nvp.bc", fallbackAppGroup]
+            let suites = Array(Set([appGroup, fallbackAppGroup]))
             if let preSortedData = try? JSONEncoder().encode(sortedCallKitEntries) {
                 for suite in suites {
                     if let defaults = UserDefaults(suiteName: suite) {

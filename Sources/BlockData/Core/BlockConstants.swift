@@ -5,7 +5,7 @@ import Foundation
 
 // MARK: - App Group & Extension Identifiers
 
-public let appGroup = "group.com.tts.nvp-bc"
+public let appGroup = "group.com.an.blockcall"
 public let fallbackAppGroup = "group.com.an.blockcall"
 public let legacyAppGroup = "group.com.an.blockcall"
 
